@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/styles/bootstrap.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body>
+    <div class="caixa">
+      <div class="calculadora">
+        <div class="row mb-3 m">
+          <input
+            type="text"
+            class="input"
+            id="input"
+            readonly
+            placeholder="aperte uma tecla"
+          />
+        </div>
+        <div class="row mb-3 m">
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('1')">1</button>
+          </div>
+
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('2')">2</button>
+          </div>
+
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('3')">3</button>
+          </div>
+
+          <div class="position-relative">
+            <div class="sombra2"></div>
+            <button class="btn-operador" onclick="btn('+')">+</button>
+          </div>
+        </div>
+
+        <div class="row mb-3 m">
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('4')">4</button>
+          </div>
+
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('5')">5</button>
+          </div>
+
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('6')">6</button>
+          </div>
+
+          <div class="position-relative">
+            <div class="sombra2"></div>
+            <button class="btn-operador" onclick="btn('-')">-</button>
+          </div>
+        </div>
+        <div class="row mb-3 m">
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('7')">7</button>
+          </div>
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('8')">8</button>
+          </div>
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('9')">9</button>
+          </div>
+          <div class="position-relative">
+            <div class="sombra2"></div>
+            <button class="btn-operador" onclick="btn('*')">x</button>
+          </div>
+        </div>
+        <div class="row mb-3 m">
+          <div class="position-relative">
+            <div class="sombra"></div>
+            <button class="btn-number" onclick="btn('0')">0</button>
+          </div>
+          <div class="position-relative">
+            <div class="sombra3"></div>
+            <button class="btn-view" onclick="limpar()">C</button>
+          </div>
+          <div class="position-relative">
+            <div class="sombra3"></div>
+            <button class="btn-view" onclick="calcular()">=</button>
+            <div class="position-relative"></div>
+          </div>
+          <div class="position-relative">
+            <div class="sombra2"></div>
+            <button class="btn-operador" onclick="btn('/')">/</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <script src="index.js"></script>
+</html>
